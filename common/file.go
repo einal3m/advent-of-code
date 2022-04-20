@@ -18,3 +18,10 @@ func ReadPuzzleInputInts(delimiter string) []int {
 
 	return puzzleInput
 }
+
+func ReadPuzzleInputStrings(delimiter string) []string {
+	content, _ := ioutil.ReadFile("input.txt")
+	lines := strings.Split(string(content), delimiter)
+
+	return lines
+}
